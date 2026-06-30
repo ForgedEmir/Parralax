@@ -1,0 +1,16 @@
+mcp_servers:
+  parallax:
+    command: "pnpm"
+    args: ["--dir", "C:/absolute/path/to/parallax", "mcp"]
+    env:
+      PARALLAX_API_URL: "http://127.0.0.1:8787"
+    timeout: 120
+    tools:
+      include:
+        - get_operation
+        - list_protocols
+        - compile_operation
+        - inspect_fixture
+        - inspect_image
+        - verify_evidence_ledger
+        - reset_operation
